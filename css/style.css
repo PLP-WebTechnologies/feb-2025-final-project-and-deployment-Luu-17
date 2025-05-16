@@ -1,0 +1,185 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../background.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: scroll;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    color: #eaeaea;
+}
+
+/* Parallax Scrolling Effect */
+body {
+    background-position: center 0px;
+    transition: background-position 0.2s ease;
+}
+
+
+/* Fallback Background Color */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2e2e2e; /* Dark grey fallback */
+    z-index: -1;
+    opacity: 1;
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(59, 47, 47, 0.8);
+    color: #eaeaea;
+    border-radius: 10px;
+    margin: 1rem auto;
+    max-width: 800px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: #c9b6b6;
+}
+
+/* Section Styling */
+.section {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+    background-color: rgba(46, 46, 46, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    color: #eaeaea;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Image Links Gallery */
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.image-gallery a {
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-gallery img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effects */
+.image-gallery a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(59, 47, 47, 0.8);
+    color: #eaeaea;
+    margin-top: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+ 
+.page-div{
+    display: grid;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 1rem;
+
+}
+
+ .page-div img {
+    width: 100%;
+    transition: transform 0.3s ease;
+ }
+
+
+ #menu{
+    width:100%;
+    height: 40px;
+    background-color:  rgba(46, 46, 46, 0.85);
+    padding-top: 12px;
+
+
+}
+
+#menu a{
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 800;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+#menu a:hover{
+    color: #c9b6b6;
+}
+
+button{
+    width: 100% ;
+    color: rgb(0, 0, 0);
+    font-family: serif ;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 8px;
+    
+}
+
+button:hover{
+    background-color: #3e0606;
+    font-weight: 1000;
+}
